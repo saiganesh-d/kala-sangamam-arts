@@ -57,6 +57,26 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Indian Art Inspired Colors
+        maroon: "hsl(var(--maroon))",
+        gold: "hsl(var(--gold))",
+        saffron: "hsl(var(--saffron))",
+        cream: "hsl(var(--cream))",
+        terracotta: "hsl(var(--terracotta))",
+        "royal-blue": "hsl(var(--royal-blue))",
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-gold": "var(--gradient-gold)",
+        "gradient-hero": "var(--gradient-hero)",
+      },
+      boxShadow: {
+        elegant: "var(--shadow-elegant)",
+        gold: "var(--shadow-gold)",
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
