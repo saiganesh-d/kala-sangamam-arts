@@ -18,41 +18,53 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-maroon text-white">
-      <div className="container mx-auto px-6 py-16">
+    <footer className="bg-sacred-maroon text-white relative overflow-hidden">
+      {/* Temple Architecture Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="h-full w-full" style={{
+          backgroundImage: `repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 20px,
+            hsl(var(--temple-gold) / 0.1) 20px,
+            hsl(var(--temple-gold) / 0.1) 22px
+          )`
+        }}></div>
+      </div>
+      
+      <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand Section */}
+          {/* Sacred Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">K</span>
+              <div className="w-12 h-12 bg-gradient-divine rounded-full flex items-center justify-center border border-temple-gold/30">
+                <span className="text-sacred-cream font-bold text-xl">॥</span>
               </div>
               <div>
                 <h3 className="text-2xl font-serif font-bold text-white">
                   Kalaa Kuteer
                 </h3>
-                <p className="text-cream/80 text-sm">Art Classes</p>
+                <p className="text-sacred-cream/80 text-sm">Sacred Art Temple</p>
               </div>
             </div>
-            <p className="text-cream/90 leading-relaxed mb-6">
-              Preserving and teaching traditional South Indian art forms with over 30 years of experience. 
-              Join us to discover your artistic heritage.
+            <p className="text-sacred-cream/90 leading-relaxed mb-6">
+              Preserving and teaching sacred traditional South Indian art forms with divine reverence and over 30 years of devoted experience.
             </p>
-            <div className="flex items-center gap-2 text-gold">
+            <div className="flex items-center gap-2 text-temple-gold">
               <Heart className="w-4 h-4" />
-              <span className="text-sm">Teaching with passion since 1990</span>
+              <span className="text-sm">Teaching with devotion since 1990</span>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Sacred Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-temple-gold">Sacred Paths</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-cream/80 hover:text-gold transition-colors duration-200 text-sm"
+                    className="text-sacred-cream/80 hover:text-temple-gold transition-colors duration-200 text-sm border-b border-transparent hover:border-temple-gold/30"
                   >
                     {link.label}
                   </a>
@@ -61,59 +73,59 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Art Forms */}
+          {/* Divine Art Forms */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gold">Art Forms</h4>
+            <h4 className="text-lg font-semibold mb-4 text-temple-gold">Divine Arts</h4>
             <ul className="space-y-2">
               {artForms.map((art, index) => (
-                <li key={index} className="text-cream/80 text-sm">
+                <li key={index} className="text-sacred-cream/80 text-sm">
                   {art}
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Temple Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gold">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-4 text-temple-gold">Temple Reach</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 mt-0.5 text-gold flex-shrink-0" />
+                <Phone className="w-4 h-4 mt-0.5 text-temple-gold flex-shrink-0" />
                 <div>
-                  <p className="text-cream font-medium text-sm">+91 98765 43210</p>
-                  <p className="text-cream/70 text-xs">Call for immediate assistance</p>
+                  <p className="text-sacred-cream font-medium text-sm">+91 98765 43210</p>
+                  <p className="text-sacred-cream/70 text-xs">Connect with Masters</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <Mail className="w-4 h-4 mt-0.5 text-gold flex-shrink-0" />
+                <Mail className="w-4 h-4 mt-0.5 text-temple-gold flex-shrink-0" />
                 <div>
-                  <p className="text-cream font-medium text-sm">info@kalaakuteer.com</p>
-                  <p className="text-cream/70 text-xs">Send us your queries</p>
+                  <p className="text-sacred-cream font-medium text-sm">info@kalaakuteer.com</p>
+                  <p className="text-sacred-cream/70 text-xs">Send your sacred queries</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 mt-0.5 text-gold flex-shrink-0" />
+                <MapPin className="w-4 h-4 mt-0.5 text-temple-gold flex-shrink-0" />
                 <div>
-                  <p className="text-cream font-medium text-sm">South Indian Arts Center</p>
-                  <p className="text-cream/70 text-xs">Weekend Classes Available</p>
+                  <p className="text-sacred-cream font-medium text-sm">Sacred Arts Temple</p>
+                  <p className="text-sacred-cream/70 text-xs">Weekend Sacred Sessions</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-cream/20 mt-12 pt-8">
+        {/* Sacred Bottom Section */}
+        <div className="border-t border-temple-gold/30 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-cream/70 text-sm text-center md:text-left">
-              © 2024 Kalaa Kuteer. All rights reserved. Preserving traditional South Indian art forms.
+            <p className="text-sacred-cream/70 text-sm text-center md:text-left">
+              © 2024 Kalaa Kuteer. All rights reserved. Preserving sacred South Indian art traditions with devotion.
             </p>
-            <div className="flex items-center gap-4 text-cream/70 text-sm">
-              <span>Teachers with 30+ Years Experience</span>
+            <div className="flex items-center gap-4 text-sacred-cream/70 text-sm">
+              <span>Masters with 30+ Years Sacred Practice</span>
               <span className="hidden md:inline">•</span>
-              <span>Weekend Classes Available</span>
+              <span>Weekend Temple Sessions</span>
             </div>
           </div>
         </div>

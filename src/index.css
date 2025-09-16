@@ -38,22 +38,26 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Indian Art Inspired Colors */
-    --maroon: 15 65% 25%;
-    --gold: 45 85% 55%;
-    --saffron: 25 85% 55%;
-    --cream: 42 20% 96%;
-    --terracotta: 20 70% 45%;
-    --royal-blue: 225 70% 25%;
+    /* Temple Inspired Sacred Colors */
+    --sacred-maroon: 0 45% 20%;
+    --temple-gold: 40 75% 45%;
+    --divine-saffron: 30 80% 50%;
+    --sacred-cream: 45 25% 94%;
+    --temple-stone: 25 20% 35%;
+    --divine-red: 5 65% 35%;
+    --sacred-bronze: 35 40% 30%;
+    --temple-amber: 42 85% 55%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--maroon)), hsl(var(--terracotta)));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--saffron)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--cream)));
+    /* Sacred Gradients */
+    --gradient-temple: linear-gradient(135deg, hsl(var(--sacred-maroon)), hsl(var(--divine-red)));
+    --gradient-divine: linear-gradient(135deg, hsl(var(--temple-gold)), hsl(var(--temple-amber)));
+    --gradient-sacred: linear-gradient(180deg, hsl(var(--sacred-cream)), hsl(var(--temple-stone) / 0.1));
+    --gradient-sanctum: radial-gradient(circle at center, hsl(var(--temple-gold) / 0.2), hsl(var(--sacred-maroon) / 0.8));
     
-    /* Shadows */
-    --shadow-elegant: 0 10px 25px -5px hsl(var(--maroon) / 0.1);
-    --shadow-gold: 0 5px 15px -5px hsl(var(--gold) / 0.3);
+    /* Temple Shadows */
+    --shadow-temple: 0 15px 35px -10px hsl(var(--sacred-maroon) / 0.3);
+    --shadow-divine: 0 8px 25px -8px hsl(var(--temple-gold) / 0.4);
+    --shadow-inner: inset 0 2px 4px hsl(var(--sacred-maroon) / 0.1);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
